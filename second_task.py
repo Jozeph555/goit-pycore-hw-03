@@ -16,6 +16,10 @@ def get_numbers_ticket(min_num: int, max_num: int, quantity: int) -> list:
         list: The list of randomly selected, sorted unique numbers. 
               If the parameters do not meet the specified limits, 
               the function returns an empty list.
+
+    Raises:
+        ValueError: If param1 > param2 or param3 > (param2 - param1 + 1).
+        TypeError: If parameters are not int.
     """
 
     try:

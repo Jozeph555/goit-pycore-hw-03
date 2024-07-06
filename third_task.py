@@ -12,6 +12,9 @@ def normalize_phone(phone_number: str) -> str:
 
     Returns:
         str: returns a normalized phone number in the format "+380000000000"
+
+    Raises:
+        TypeError: If param1 is not a string.
     """
 
     try:
