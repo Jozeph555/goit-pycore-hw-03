@@ -24,7 +24,9 @@ def get_days_from_today(date: str) -> int:
         current_date = datetime.today()
         date_given = datetime.strptime(date, "%Y-%m-%d")
         return (current_date - date_given).days
+
     except ValueError as e:
         return e
+
     except TypeError:
         return "argument must be string"
